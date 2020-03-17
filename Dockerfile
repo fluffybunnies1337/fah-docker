@@ -1,6 +1,6 @@
 FROM nvidia/opencl:runtime-ubuntu18.04
 
-MAINTAINER Peter Salanki <peter@coreweave.com>
+MAINTAINER g-unit123 
 
 ENV DEBIAN_FRONTEND noninteractive
 
