@@ -50,10 +50,10 @@ spec:
           timeoutSeconds: 1
         resources:
           limits:
-            memory: 10Gi
-            nvidia.com/gpu: 10 # Allocate 10 GPUs
+            memory: 6Gi
+            nvidia.com/gpu: 5 # Allocate 10 GPUs
           requests:
-            cpu: 10
+            cpu: 1
             memory: 5Gi
         volumeMounts:
         - name: userdir
