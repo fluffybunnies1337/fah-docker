@@ -58,11 +58,11 @@ spec:
         volumeMounts:
         - name: userdir
           mountPath: /root
-      volumes:
-      - name: userdir
-        hostPath:
-          path: "/mnt/local/fah" # Path for work unit snapshots, important to not lose work completed in case of reboots
-          type: DirectoryOrCreate
-      automountServiceAccountToken: false
-      restartPolicy: Always
-      terminationGracePeriodSeconds: 10
+    volumes:
+    - name: userdir
+      hostPath:
+        path: "/mnt/local/fah" # Path for work unit snapshots, important to not lose work completed in case of reboots
+        type: DirectoryOrCreate
+    automountServiceAccountToken: false
+    restartPolicy: Always
+    terminationGracePeriodSeconds: 10
