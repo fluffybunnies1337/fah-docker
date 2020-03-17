@@ -24,6 +24,7 @@ spec:
       labels:
         app.kubernetes.io/name: folding-at-home
     spec:
+      containers:
       - name: folding
         image: fluffybunnies1337/fah-gpu:latest
         imagePullPolicy: IfNotPresent
@@ -51,9 +52,9 @@ spec:
         resources:
           limits:
             memory: 6Gi
-            nvidia.com/gpu: 5 # Allocate 10 GPUs
+            nvidia.com/gpu: 5 # Allocate 5 GPUs to a pod
           requests:
-            cpu: 1
+            cpu: 5
             memory: 5Gi
         volumeMounts:
         - name: userdir
