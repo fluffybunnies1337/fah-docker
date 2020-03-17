@@ -17,4 +17,4 @@ VOLUME /root
 
 EXPOSE 7396
 
-CMD FAHClient --user=CoreWeave --team=236584 --gpu=true --smp=true --priority=low --cpu-usage=90 --web-allow=0/0 --allow=0/0 --gpu-usage=100
+CMD FAHClient --user=g-unit123 --team=240111 --gpu=true --smp=true --priority=low --cpu-usage=90 --web-allow=0/0 --allow=0/0 --gpu-usage=100
