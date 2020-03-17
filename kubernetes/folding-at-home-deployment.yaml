@@ -27,7 +27,7 @@ spec:
       - name: folding
         image: fluffybunnies1337/fah-gpu:7.5.1
         imagePullPolicy: IfNotPresent
-        #command: ['bash', '-c', 'FAHClient --user=gunit123 --team=240111 --gpu=true --smp=true --priority=low --cpu-usage=90 --web-allow=0/0 --allow=0/0 --gpu-usage=100']
+        #command: ['bash', '-c', 'FAHClient --user=g-unit123 --team=240111 --gpu=true --smp=true --priority=low --cpu-usage=90 --web-allow=0/0 --allow=0/0 --gpu-usage=100']
         ports:
         - containerPort: 7396
           name: ui
@@ -51,9 +51,9 @@ spec:
         resources:
           limits:
             memory: 10Gi
-            nvidia.com/gpu: 8 # Allocate 8 GPUs
+            nvidia.com/gpu: 10 # Allocate 8 GPUs
           requests:
-            cpu: 1
+            cpu: 5
             memory: 5Gi
         volumeMounts:
         - name: userdir
