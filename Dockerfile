@@ -4,13 +4,13 @@ MAINTAINER g-unit123
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb /tmp/
+ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.9_amd64.deb /tmp/
 
 RUN apt-get -y update
 RUN apt-get -y install ocl-icd-opencl-dev
 
-RUN dpkg -i /tmp/fahclient_7.5.1_amd64.deb || exit 0
-RUN rm /tmp/fahclient_7.5.1_amd64.deb
+RUN dpkg -i /tmp/fahclient_7.6.9_amd64.deb || exit 0
+RUN rm /tmp/fahclient_7.6.9_amd64.deb
 
 WORKDIR /root
 VOLUME /root
