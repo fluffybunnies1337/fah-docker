@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.13_amd64.deb /tmp/
 
 RUN apt-get -y update
+RUN apt-get -y upgrade
 RUN apt-get -y install ocl-icd-opencl-dev
 
 RUN dpkg -i /tmp/fahclient_7.6.13_amd64.deb || exit 0
